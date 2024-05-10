@@ -12,7 +12,6 @@
 - Utilizes machine learning techniques for classification
 - Used numerous ML models on 9 feature extractions</span>
 
-![DHUpredET Feature Extraction](file:///C:/Users/Acer/Desktop/sequence%20work/DHU/fig/dhu1.jpg)
 
 
 ## <span style="font-size:16px;">**File Formats:**</span>
