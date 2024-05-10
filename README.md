@@ -2,13 +2,18 @@
 
 ## <span style="font-size:16px;">**Overview:**</span>
 
+
 <span style="font-size:14px;">DHUpredET is a computational tool designed for the identification of dihydrouridine (DHU) modification sites in RNA sequences. This repository contains the implementation of DHUpredET as well as datasets collected from Stack-DHUpred.</span>
 
 ## <span style="font-size:16px;">**Features:**</span>
 
 <span style="font-size:14px;">- Identification of DHU modification sites in RNA sequences
 - Comparative computational approach for accurate predictions
-- Utilizes machine learning techniques for classification</span>
+- Utilizes machine learning techniques for classification
+- Used numerous ML models on 9 feature extractions</span>
+
+![DHUpredET Feature Extraction](file:///C:/Users/Acer/Desktop/sequence%20work/DHU/fig/dhu1.jpg)
+
 
 ## <span style="font-size:16px;">**File Formats:**</span>
 
