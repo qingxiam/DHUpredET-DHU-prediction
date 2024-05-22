@@ -20,6 +20,24 @@
 All datasets are provided in FASTA format, which can have either a .txt or .fasta extension. 
 Please go to the (https://en.wikipedia.org/wiki/FASTA_format) for more information.
 
+
+## <span style="font-size:16px;">**Dataset information:**</span>
+## ⏩ Highlight Feature Categories
+
+This study proposes a robust approach for developing a DHUpredET model. The approach utilizes a comprehensive feature extraction strategy, leveraging features from four descriptors:
+
+### **Natural Language Processing (NLP)-based**:
+These features capture the sequential and semantic information within the sequences using techniques like **FastText, Bert, LSA, and Doc2vec**.
+
+### **Physicochemical-based**:
+These features encode the physical and chemical properties of the residues, captured by methods like **PseEIIP and DPCP**.
+
+### **Residue composition-based**: 
+These features describe the overall composition of the sequences in terms of residue types, represented by **Z-curve features**.
+
+### **Nucleic amino acid composition-based**:
+These features capture specific information related to the amino acid composition of nucleic acids, utilizing methods like **RNA binary and PS2 features**.
+
 ## Workflow Diagram
 
 ![Workflow Diagram](https://drive.google.com/uc?export=view&id=1KvvGdqf4weDc5GH-IwFkCeuvXfLhw6nr)
@@ -27,6 +45,17 @@ Please go to the (https://en.wikipedia.org/wiki/FASTA_format) for more informati
 
 ## Proposed Architecture of the study
 ![DHUpredWT Model](https://drive.google.com/uc?export=view&id=1EyAQO9s1ektVqNoEnGH6k0-GNb6c4qgZ)
+
+## Hyperparameter Tuning Explanation
+
+- **n_estimators (100)**: This sets the number of decision trees in the forest. Tuning this value can impact model complexity and accuracy.
+- **random_state (10)**: This controls the randomness for tree generation, ensuring reproducibility when set to a fixed value.
+- **max_depth (None)**: This allows trees to grow to their maximum depth without restriction.
+- **min_samples_split (4)**: This defines the minimum number of samples required to split an internal node. Tuning this can influence model overfitting.
+- **min_samples_leaf (1)**: This sets the minimum number of samples allowed in a leaf node. Increasing it can prevent overfitting.
+- **max_features ('auto')**: This considers all features for tree splitting by default.
+- **bootstrap (False)**: This means each tree uses the entire dataset for training.
+- **criterion ('gini')**: This uses the Gini impurity measure for tree splitting. It can be compared with other criteria like entropy.
 
 ## Our DHUpredET model achieved significant improvements over previous approaches....
 
@@ -62,13 +91,4 @@ pip install scikit-learn==1.1.3
 
 
 
-from google.colab import drive
-
-drive.mount('/content/drive')
-
-
-
-
-
-Collected dataset from Stack-DHUpred { published paper}
 
